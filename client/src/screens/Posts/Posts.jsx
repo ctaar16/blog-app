@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './Posts.css'
-
 import Post from '../../components/Post/Post'
 import Search from '../../components/Search/Search'
-import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort"
+import { titleAZ, titleZA, userAZ, userZA } from "../../utils/sort"
 import Sort from '../../components/Sort/Sort'
 import Layout from '../../components/shared/Layout/Layout'
 import { getPosts } from '../../services/posts'
@@ -26,16 +25,16 @@ const Posts = (props) => {
     setSortType(type)
     switch (type) {
       case "title-ascending":
-        setQueriedPosts(AZ(queriedPosts))
+        setQueriedPosts(titleAZ(queriedPosts))
         break
       case "title-descending":
-        setQueriedPosts(ZA(queriedPosts))
+        setQueriedPosts(titleZA(queriedPosts))
         break
       case "user-ascending":
-        setQueriedPosts(lowestFirst(queriedPosts))
+        setQueriedPosts(userAZ(queriedPosts))
         break
       case "user-descending":
-        setQueriedPosts(highestFirst(queriedPosts))
+        setQueriedPosts(userZA(queriedPosts))
         break
       default:
         break
