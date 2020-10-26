@@ -26,7 +26,7 @@ const Posts = (props) => {
     setSortType(type)
     switch (type) {
       case "title-ascending":
-        setQueriedProducts(AZ(queriedPosts))
+        setQueriedPosts(AZ(queriedPosts))
         break
       case "title-descending":
         setQueriedPosts(ZA(queriedPosts))
