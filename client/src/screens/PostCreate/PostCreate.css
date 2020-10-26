@@ -1,4 +1,4 @@
-/* .create-form {
+.create-form {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -61,4 +61,4 @@ textarea {
     input, textarea {
         font-size: 28px;
     }
-} */
+}
