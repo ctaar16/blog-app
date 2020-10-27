@@ -16,10 +16,10 @@ const PostCreate = (props) => {
     const [isCreated, setCreated] = useState(false)
 
     const handleChange = (event) => {
-        const { title, value } = event.target
+        const { name, value } = event.target
         setPost({
                 ...post,
-                [title]: value
+                [name]: value
         })
     }
 
