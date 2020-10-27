@@ -26,10 +26,10 @@ const PostEdit = (props) => {
 
 
     const handleChange = (event) => {
-        const { title, value } = event.target
+        const { name, value } = event.target
         setPost({
                 ...post,
-                [title]: value
+                [name]: value
         })
     }
 
