@@ -11,10 +11,10 @@ const Sort = (props) => {
         <form className="sort-container" onSubmit={props.handleSubmit}>
             <label htmlFor="sort">SORT BY:</label>
             <select className="sort" onChange={handleChange}>
-                <option className="option" value="title-ascending" >&nbsp; Alphabetically, A-Z &nbsp;</option>
-                <option value="title-descending">&nbsp; Alphabetically, Z-A &nbsp;</option>
-                <option value="user-ascending">&nbsp; Price, low to high &nbsp;</option>
-                <option value="user-descending">&nbsp; Price, high to low &nbsp;</option>
+                <option className="option" value="title-ascending" >&nbsp; Title, A-Z &nbsp;</option>
+                <option value="title-descending">&nbsp; Title, Z-A &nbsp;</option>
+                <option value="user-ascending">&nbsp; User, A-Z &nbsp;</option>
+                <option value="user-descending">&nbsp; User, Z-A &nbsp;</option>
             </select>
         </form>
     )
