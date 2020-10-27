@@ -36,7 +36,7 @@ const PostCreate = (props) => {
         <Layout user={props.user}>
             <form className="create-form" onSubmit={handleSubmit}>
                 <input
-                    className="title"
+                    className="input-title"
                     placeholder='Title'
                     value={post.title}
                     name='title'
@@ -45,7 +45,7 @@ const PostCreate = (props) => {
                     onChange={handleChange}
                 />
                 <input
-                    className="user"
+                    className="input-user"
                     placeholder='User'
                     value={post.user}
                     name='user'
