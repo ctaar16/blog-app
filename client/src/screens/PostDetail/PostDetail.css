@@ -10,14 +10,15 @@
     line-height: 1.6;
 }
 
-.name {
+.title {
     font-size: 64px;
     letter-spacing: 1px;
     padding: 5px;
 }
 
-.price {
+.user {
     font-size: 28px;
+    padding: 5px;
 }
 
 .description {
@@ -80,16 +81,16 @@
     .post-detail {
         padding: 0px;
         padding-top: 120px;
-        /* margin: 0px; */
-        /* display: flex;
+        margin: 0px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; */
+        align-items: center;
     }
     .button-container {
-        /* display: flex;
+        display: flex;
         justify-content: space-evenly;
-        padding-top: 0px; */
+        padding-top: 0px;
         padding: 20px;
         padding-bottom: 80px;
     }
